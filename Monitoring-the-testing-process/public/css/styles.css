@@ -1,0 +1,734 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* стили для header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-bottom: 1px solid #0056b3;
+    color: white;
+}
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#logout-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+#logout-form button {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+/* стили для header конец */
+
+/* стили для footer */
+footer {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-top: 1px solid #0056b3;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* стили для footer конец */
+
+/* стили вывода ошибки авторизации */
+.autherror {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.autherror h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.autherror p {
+    font-size: 18px;
+}
+
+.autherror a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.autherror a:hover {
+    color: #0056b3;
+}
+/* стили вывода ошибки авторизации конец */
+
+/* стили Главной страницы */
+.introductory_text {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.introductory_text h2 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+.introductory_text h4 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.introductory_text p {
+    margin-bottom: 15px;
+}
+.introductory_text ol {
+    padding-left: 20px;
+}
+.introductory_text li {
+    margin-bottom: 10px;
+}
+.introductory_text strong {
+    color: #0056b3;
+}
+
+/* стили Главной страницы конец */
+
+/* стили для блока скачивания */
+.download {
+    max-width: 800px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.download h1 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+.download p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.download button {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.download button:hover {
+    background-color: #0056b3;
+}
+/* стили для блока скачивания конец */
+
+/* стили для блока "О нас" */
+.about {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+.about h1 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.about a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+.about img {
+    vertical-align: middle;
+}
+/* стили для блока "О нас" конец */
+
+/* стили для блока авторизации */
+.login-form {
+    max-width: 400px;
+    margin: 110px auto;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.login-form h2 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+.login-form div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+.login-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.login-form button {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.login-form button:hover {
+    background-color: #0056b3;
+}
+.login-form .errors {
+    margin-bottom: 15px;
+    color: red;
+}
+.login-form p {
+    margin-top: 20px;
+}
+.login-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+.login-form a:hover {
+    text-decoration: underline;
+}
+/* стили для блока авторизации конец */
+
+/* стили для блока регистрации */
+.register-form {
+    max-width: 800px;
+    margin: 75px auto;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+.register-form h2 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.register-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.register-form .form-row > div {
+    width: 48%;
+}
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.register-form button {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+.register-form button:hover {
+    background-color: #0056b3;
+}
+.register-form .errors {
+    margin-bottom: 15px;
+    color: red;
+    text-align: center;
+}
+.register-form p {
+    margin-top: 20px;
+    text-align: center;
+}
+.register-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+.register-form a:hover {
+    text-decoration: underline;
+}
+/* стили для блока регистрации конец */
+
+/* стили для профиля пользователя */
+.profile {
+    max-width: 800px;
+    margin: 110px auto;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+.profile h2 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.profile .profile-info {
+    display: flex;
+    justify-content: space-between;
+}
+.profile .column {
+    width: 48%;
+}
+.profile p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.profile button {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+.profile .edit {
+    background-color: #007bff;
+}
+.profile .edit:hover {
+    background-color: #0056b3;
+}
+.profile .delete {
+    background-color: #dc3545;
+}
+.profile .delete:hover {
+    background-color: #c82333;
+}
+/* стили для профиля пользователя конец*/
+
+/* Стили для формы редактирования профиля */
+.profile-edit {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.profile-edit h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-edit .form-group {
+    margin-bottom: 20px;
+}
+
+.profile-edit label {
+    display: block;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.profile-edit input[type="text"],
+.profile-edit input[type="email"],
+.profile-edit select{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.profile-edit button[type="submit"] {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.profile-edit button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.profile-edit .columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-edit .column {
+    width: 48%;
+}
+/* Стили для формы редактирования профиля конец*/
+
+/* Стили для формы вывода классов */
+.class-form {
+    margin: 150px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.class-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.class-form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.class-form li {
+    margin-bottom: 10px;
+}
+
+.class-button {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.add-class-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.class-button:hover,
+.add-class-button:hover {
+    background-color: #0056b3;
+}
+/* Стили для формы вывода классов конец*/
+
+/* Стили для формы деталей класса */
+.details {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    min-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.details .student-item {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.details .student-item .remove-student-btn {
+    background-color: transparent !important;
+    color: red;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.details .remove-student-btn:hover {
+    color: darkred;
+}
+
+.add-student-button {
+    display: block;
+    width: 300px;
+    background-color: #007da7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 50px;
+    font-size: 16px;
+}
+
+.add-student-button:hover {
+    background-color: #005f6b;
+}
+
+.delete-class-button {
+    display: block;
+    width: 400px;
+    height: 45px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.delete-class-button:hover {
+    background-color: darkred;
+}
+
+/* Стили для формы деталей  класса конец */
+
+/* Стили для формы добавления класса */
+.class-form {
+    margin: 150px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.class-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"], .addclass-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.addclass-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.addclass-button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для формы добавления класса конец */
+
+.add-student-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 170px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.add-student-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.add-student-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.add-student-form .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.add-student-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+
+.add-student-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.add-student-form .add-student-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-student-form .add-student-button:hover {
+    background-color: #0056b3;
+}
+
+
+.add-student-form .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.add-student-form .alert-danger ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.add-student-form .alert-danger li {
+    margin: 0;
+    padding: 0;
+}
